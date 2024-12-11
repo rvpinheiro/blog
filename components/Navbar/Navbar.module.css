@@ -1,0 +1,42 @@
+.navbar {
+  width: 75%; 
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.navbar .blog-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(-90deg); 
+  margin-right: 20px;
+  margin-left: 10px; 
+  display: inline-block; 
+}
+
+.navbar .divider {
+  width: 50%;
+  height: 1px;
+  background-color: rgba(213, 211, 219, .3);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 15px; 
+}
+
+.navLinks li {
+  display: inline;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+  text-transform: uppercase;
+}
