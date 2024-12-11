@@ -13,16 +13,16 @@ export default function Navbar() {
                     <Link href="/" className={styles.link}>Home</Link>
                 </li>
                 <li>
-                    <Link href="/about" className={styles.link}>Blog</Link>
+                    <Link href="/blog" className={styles.link}>Blog</Link>
                 </li>
                 <li>
                     <Link href="/about" className={styles.link}>Sobre</Link>
                 </li>
                 <li>
-                    <Link href="/about" className={styles.link}>Categorias</Link>
+                    <Link href="/categories" className={styles.link}>Categorias</Link>
                 </li>
                 <li>
-                    <Link href="/about" className={styles.link}>Contacto</Link>
+                    <Link href="/contact" className={styles.link}>Contacto</Link>
                 </li>
             </ul>
         </nav>
