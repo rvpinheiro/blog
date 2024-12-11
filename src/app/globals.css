@@ -2,11 +2,13 @@
 
 :root {
   --background: #0C1326;        /* Cor de fundo */
+  --secondary-background: #162245;
   --foreground: #ffffff;        /* Cor do texto (branco) */
   --button-background: #162246; /* Cor de fundo dos botões */
   --button-text: #ffffff;       /* Cor do texto dos botões */
   --primary-text: #ffffff;      /* Cor para texto principal */
   --secondary-text: #5D6169;    /* Cor para texto secundário */
+  --terciary-text: #ACACAD;
 }
 
 body {

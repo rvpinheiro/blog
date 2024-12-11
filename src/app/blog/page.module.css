@@ -1,0 +1,15 @@
+.blogPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin-bottom: 40px; 
+  }
+
+  
