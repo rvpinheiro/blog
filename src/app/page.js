@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import CarrousselCard from "../../components/Cards/CarrousselCard/CarrousselCard";
 import LatestCard from "../../components/Cards/LastestCard/LastestCard";
-import BlogCard from "../../components/Cards/BlogCard/BlogCard";
+import Divider from "../../components/Divider/Divider";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
         />
       </div>
       <div className={styles.latestCardContainer}>
+        <Divider text="Últimos posts" />
         <LatestCard
           image="https://picsum.photos/1920/1080"
           title="Avanços no Desenvolvimento de Energia Solar"

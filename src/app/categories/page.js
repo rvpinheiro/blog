@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './page.module.css'
 import CategoriesCard from '../../../components/Cards/CategoriesCard/CategoriesCard'
+import Divider from '../../../components/Divider/Divider'
 
 const Page = () => {
     return (
         <div className={styles.page}>
+            <Divider text="Todas as categorias" />
+
             <div className={styles.categoriesContainer}>
                 <CategoriesCard
                     image="https://picsum.photos/1920/1080?random=1"

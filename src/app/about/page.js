@@ -2,6 +2,7 @@ import React from 'react';
 import ImageCard from '../../../components/Cards/ImageCard/ImageCard';
 import styles from './page.module.css';
 import TeamCard from '../../../components/Cards/TeamCard/TeamCard';
+import Divider from '../../../components/Divider/Divider';
 
 const Page = () => {
     return (
@@ -35,25 +36,28 @@ const Page = () => {
                     altText="Imagem 5"
                 />
             </div>
-            <div className={styles.teamCardContainer}>
-                <TeamCard
-                    image="https://picsum.photos/120?random=1"
-                    name="Alice Souza"
-                    role="Designer Gráfico"
-                    description="Alice é uma designer gráfica apaixonada por criar experiências."
-                />
-                <TeamCard
-                    image="https://picsum.photos/120?random=2"
-                    name="Felipe Oliveira"
-                    role="Desenvolvedor Frontend"
-                    description="Felipe é um desenvolvedor frontend que adora trabalhar com JavaScript."
-                />
-                <TeamCard
-                    image="https://picsum.photos/120?random=3"
-                    name="Laura Pereira"
-                    role="Gerente de Projetos"
-                    description="Laura é uma gerente de projetos focada em organização e entrega de resultados."
-                />
+            <div>
+                <Divider text="A equipa" />
+                <div className={styles.teamCardContainer}>
+                    <TeamCard
+                        image="https://picsum.photos/120?random=1"
+                        name="Alice Souza"
+                        role="Designer Gráfico"
+                        description="Alice é uma designer gráfica apaixonada por criar experiências."
+                    />
+                    <TeamCard
+                        image="https://picsum.photos/120?random=2"
+                        name="Felipe Oliveira"
+                        role="Desenvolvedor Frontend"
+                        description="Felipe é um desenvolvedor frontend que adora trabalhar com JavaScript."
+                    />
+                    <TeamCard
+                        image="https://picsum.photos/120?random=3"
+                        name="Laura Pereira"
+                        role="Gerente de Projetos"
+                        description="Laura é uma gerente de projetos focada em organização e entrega de resultados."
+                    />
+                </div>
             </div>
         </div>
     );
