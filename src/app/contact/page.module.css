@@ -1,0 +1,120 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--button-text);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--terciary-text);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field {
+  width: 100%;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field.messageField {
+  max-width: 100%;  
+}
+
+.label {
+  font-size: 16px;
+  color: var(--terciary-text);
+  text-align: left;
+}
+
+.input,
+.dropdown,
+.textarea {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #1e1e1e;
+  color: var(--button-text);
+  outline: none;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box; 
+}
+
+.textarea {
+  resize: none;
+}
+
+.dropdown {
+  appearance: none;
+  background: #1e1e1e url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"%3E%3Cpath d="M7 10l5 5 5-5H7z"/%3E%3C/svg%3E') no-repeat right 1rem center;
+  background-size: 1.5rem;
+}
+
+.dropdown:invalid {
+  color: rgba(255, 255, 255, 0.6); /* Cor mais escura para o dropdown quando valor inválido */
+}
+
+.dropdown option:disabled {
+  color: rgba(255, 255, 255, 0.6); /* Cor mais escura para a opção 'Escolha uma opção' */
+}
+
+.dropdown option:not(:disabled) {
+  color: var(--button-text); /* Cor normal para as opções ativas */
+}
+
+.button {
+  align-self: flex-start;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: var(--button-background);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.feedbackMessage {
+    margin-top: 20px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    transition: opacity 0.5s ease;
+}
+
+.success {
+    color:rgb(38, 143, 62);
+}
+
+.error {
+    color:rgb(164, 41, 54);
+}
