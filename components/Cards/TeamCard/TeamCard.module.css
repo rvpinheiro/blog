@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  width: 700px;
+  width: 650px;
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
@@ -37,20 +37,24 @@
   margin: 20px 0 10px;
 }
 
+.cardRoleContainer {
+  width: auto;
+  margin: 0 auto;
+}
+
 .cardRole {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--button-text); 
   background-color: var(--button-background);
-  padding: 0.2rem .5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  margin-top: 2rem;
 }
 
 .cardDescription {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--terciary-text);
   flex-grow: .5;
   line-height: 1.5rem;
@@ -66,14 +70,5 @@
 .socialIcons i {
   font-size: 1.5rem;
   color: var(--button-text);
+  margin-bottom: 1rem;
 }
-
-.profileLink {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--terciary-text);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-

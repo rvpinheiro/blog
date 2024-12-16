@@ -63,3 +63,22 @@
 .cardTitle, .cardAuthorDate .author, .cardAuthorDate .date {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
+
+.favoriteStar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-background); 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px var(--button-text);
+}
+
+.favoriteStar i {
+    font-size: 14px; 
+    color: var(--button-text); 
+}

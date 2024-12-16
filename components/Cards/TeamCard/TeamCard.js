@@ -10,15 +10,16 @@ const TeamCard = ({ image, name, role, description }) => {
             />
             <div className={styles.cardContent}>
                 <h3 className={styles.cardName}>{name}</h3>
-                <p className={styles.cardRole}>{role}</p>
+                <div className={styles.cardRoleContainer}>
+                    <p className={styles.cardRole}>{role}</p>
+                </div>
                 <p className={styles.cardDescription}>{description}</p>
                 <div className={styles.socialIcons}>
                     <i className="fab fa-facebook"></i>
-                    <i className="fab fa-facebook"></i>
-                    <i className="fab fa-facebook"></i>
-                    <i className="fab fa-facebook"></i>
+                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-linkedin"></i>
+
                 </div>
-                <p className={styles.profileLink}>Ver Perfil</p>
             </div>
         </div>
     );

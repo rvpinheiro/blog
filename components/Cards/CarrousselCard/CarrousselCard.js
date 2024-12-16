@@ -8,6 +8,9 @@ const CarrousselCard = ({ image, title, author, authorImage, date, category }) =
                 className={styles.cardImage}
                 style={{ backgroundImage: `url(${image})` }}>
             </div>
+            <div className={styles.favoriteStar}>
+                <i className="fas fa-star"></i>
+            </div>
             <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>{title}</h3>
                 <p className={styles.cardAuthorDate}>
