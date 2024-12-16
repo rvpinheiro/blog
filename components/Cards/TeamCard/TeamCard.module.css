@@ -1,0 +1,79 @@
+.card {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--background2);
+  border: 1px solid white;
+}
+
+.cardImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px); 
+  border: 3px solid rgba(255, 255, 255, 0.2); 
+  margin-top: 35px; 
+  margin-left: 35px; 
+}
+
+.cardContent {
+  width: 45%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardName {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--button-text);
+  margin: 20px 0 10px;
+}
+
+.cardRole {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--button-text); 
+  background-color: var(--button-background);
+  padding: 0.2rem .5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.cardDescription {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: var(--terciary-text);
+  flex-grow: .5;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socialIcons i {
+  font-size: 1.5rem;
+  color: var(--button-text);
+}
+
+.profileLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--terciary-text);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('../../styles/fontawesome.css');
 
 :root {
   --background: #0C1326;        /* Cor de fundo */
+  --background2: #070F1F;
   --secondary-background: #162245;
   --foreground: #ffffff;        /* Cor do texto (branco) */
   --button-background: #162246; /* Cor de fundo dos botões */
