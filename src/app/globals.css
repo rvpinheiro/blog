@@ -11,6 +11,7 @@
   --primary-text: #ffffff;      /* Cor para texto principal */
   --secondary-text: #5D6169;    /* Cor para texto secundário */
   --terciary-text: #ACACAD;
+  --quat-text: #A8A8AA;
 }
 
 body {

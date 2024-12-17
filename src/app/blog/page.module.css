@@ -7,9 +7,10 @@
   
   .cardContainer {
     display: flex;
-    justify-content: center;
-    gap: 30px; 
-    margin-bottom: 40px; 
-  }
+    flex-wrap: wrap;  /* Permite que os cards se movam para a próxima linha */
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 30px;  /* Espaçamento entre os cards */
+    margin-bottom: 40px;
+}
 
   
