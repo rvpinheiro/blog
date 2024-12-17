@@ -1,0 +1,16 @@
+.categoriesPostPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os cards se movam para a próxima linha */
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 30px;  /* Espaçamento entre os cards */
+    margin-bottom: 40px;
+}
+
+  
