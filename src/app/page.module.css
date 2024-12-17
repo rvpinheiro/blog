@@ -11,10 +11,10 @@
 }
 
 .latestCardContainer {
-  display: flex;                    /* Flexbox para disposição dos cards */
-  flex-direction: column;           /* Centraliza os cards em coluna */
-  gap: 3rem;                        /* Espaçamento entre os cards */
-  width: 100%;                      /* Ocupa 100% da largura */
-  margin: 10rem 0;                  /* Espaçamento superior e inferior */
-  align-items: center;              /* Centraliza os cards dentro do container */
+  display: flex;                    
+  flex-direction: column;           
+  gap: 3rem;                        
+  width: 100%;                     
+  margin: 5rem 0;                 
+  align-items: center;             
 }

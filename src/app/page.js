@@ -1,20 +1,13 @@
 import styles from "./page.module.css";
-import CarrousselCard from "../../components/Cards/CarrousselCard/CarrousselCard";
 import LatestCard from "../../components/Cards/LastestCard/LastestCard";
 import Divider from "../../components/Divider/Divider";
+import EmblaCarousel from "../../components/EmblaCarousel/EmblaCarousel";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.pageCarrousel}>
-        <CarrousselCard
-          image="https://picsum.photos/1920/1080"
-          title="Como a Inteligência Artificial está Mudando a Tecnologia"
-          author="Carlos Almeida"
-          authorImage="https://picsum.photos/1920/1080"
-          date="18 Outubro 2024"
-          category="Inovação"
-        />
+        <EmblaCarousel />
       </div>
       <div className={styles.latestCardContainer}>
         <Divider text="Últimos posts" />
