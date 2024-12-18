@@ -4,6 +4,8 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import CarrousselCard from "../Cards/CarrousselCard/CarrousselCard";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import styles from "./EmblaCarousel.module.css";
 
 const EmblaCarousel = () => {
@@ -88,13 +90,12 @@ const EmblaCarousel = () => {
                     ))}
                 </div>
             </div>
-
             <div className={styles.embla__controls}>
-                <button className={`${styles.embla__button} ${styles.embla__buttonLeft}`} onClick={scrollPrev}>
-                    &lt;
+                <button onClick={scrollPrev}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
-                <button className={`${styles.embla__button} ${styles.embla__buttonRight}`} onClick={scrollNext}>
-                    &gt;
+                <button onClick={scrollNext}>
+                    <FontAwesomeIcon icon={faChevronRight} />
                 </button>
             </div>
         </section>

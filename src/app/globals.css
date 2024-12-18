@@ -31,7 +31,6 @@ body {
 }
 
 button {
-  background-color: var( --color-bg-button);
   color: var(--color-primary);
   border: none;
   padding: 8px 20px;
