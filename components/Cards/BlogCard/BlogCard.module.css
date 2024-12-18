@@ -4,7 +4,7 @@
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  color: var(--background);
+  color: var( --color-primary);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: transparent;
   background-size: cover;
@@ -26,8 +26,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: var(--button-background);
-  color: var(--button-text);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 16px;
@@ -37,14 +37,14 @@
   font-size: 26px;
   font-weight: 400;
   margin: 0;
-  color: var(--button-text);
+  color: var(--color-primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-wrap: break-word;
   line-height: 1.2;
 }
 
 .divider {
-  border-top: 1px solid var(--button-text);
+  border-top: 1px solid var(--color-primary);
   margin: 10px 0;
 }
 
@@ -67,18 +67,18 @@
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  border: 1px solid var(--button-text);
+  border: 1px solid var(--color-primary);
 }
 
 .authorName {
   font-size: 16px;
-  color: var(--button-text);
+  color: var(--color-primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .date {
   font-size: 14px;
-  color: var(--button-text);
+  color: var(--color-primary);
   text-align: right;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

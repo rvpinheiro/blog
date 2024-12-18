@@ -4,7 +4,7 @@
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
-  background-color: var(--background2);
+  background-color: var(--color-bg-team);
   border: 1px solid white;
 }
 
@@ -16,7 +16,7 @@
   background-position: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   backdrop-filter: blur(10px); 
-  border: 3px solid rgba(255, 255, 255, 0.2); 
+  border: 2px solid rgba(255, 255, 255, 0.2); 
   margin-top: 35px; 
   margin-left: 35px; 
 }
@@ -33,7 +33,6 @@
 .cardName {
   font-size: 32px;
   font-weight: 400;
-  color: var(--button-text);
   margin: 20px 0 10px;
 }
 
@@ -45,8 +44,7 @@
 .cardRole {
   font-size: 14px;
   font-weight: 400;
-  color: var(--button-text); 
-  background-color: var(--button-background);
+  background-color: var(--color-bg-light);
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -55,7 +53,7 @@
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: var(--terciary-text);
+  color: var(--color-secondary-light);
   flex-grow: .5;
   line-height: 1.5rem;
   margin: 1rem 0;
@@ -69,6 +67,5 @@
 
 .socialIcons i {
   font-size: 1.5rem;
-  color: var(--button-text);
   margin-bottom: 1rem;
 }

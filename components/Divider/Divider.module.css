@@ -16,6 +16,6 @@
 .text {
     font-size: 32px; 
     font-weight: 400;
-    color: var(--button-text);  
+    color: var(--color-secondary-light);  
     white-space: nowrap;
 }

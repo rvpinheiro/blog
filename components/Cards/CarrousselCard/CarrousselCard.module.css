@@ -4,7 +4,7 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    color: var(--background);  
+    color: var(--color-bg-team);  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -19,17 +19,17 @@
     position: absolute;
     bottom: 30px;
     left: 30px;
-    color: var(--button-text); 
+    color: var(--color-primary); 
 }
 
 .cardTitle {
     font-size: 32px;
     margin: 0;
-    color: var(--button-text); 
+    color: var(--color-primary); 
 }
 
 .cardAuthorDate {
-    color: var(--button-text); 
+    color: var(--color-primary); 
     display: flex;
     align-items: center;
     gap: 10px;
@@ -46,15 +46,15 @@
 
 .cardAuthorDate .author, .cardAuthorDate .date {
     font-size: 16px;
-    color: var(--button-text); 
+    color: var(--color-primary); 
 }
 
 .cardCategory {
     position: absolute;
     top: 25px;
     right: 25px;
-    background-color: var(--button-background); 
-    color: var(--button-text); 
+    background-color: var(--color-bg); 
+    color: var(--color-primary); 
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 15px;
@@ -70,15 +70,15 @@
     left: 15px;
     width: 40px;
     height: 40px;
-    background-color: var(--button-background); 
+    background-color: var(--color-bg); 
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px var(--button-text);
+    border: 2px var(--color-primary);
 }
 
 .favoriteStar i {
     font-size: 14px; 
-    color: var(--button-text); 
+    color: var(--color-primary); 
 }

@@ -2,28 +2,37 @@
 @import url('../../styles/fontawesome.css');
 
 :root {
-  --background: #0C1326;        /* Cor de fundo */
-  --background2: #070F1F;
-  --secondary-background: #162245;
-  --foreground: #ffffff;        /* Cor do texto (branco) */
-  --button-background: #162246; /* Cor de fundo dos botões */
-  --button-text: #ffffff;       /* Cor do texto dos botões */
-  --primary-text: #ffffff;      /* Cor para texto principal */
-  --secondary-text: #5D6169;    /* Cor para texto secundário */
-  --terciary-text: #ACACAD;
-  --quat-text: #A8A8AA;
+  /* Cores Texto */
+  --color-primary: #FDFDFE;
+  --color-secondary: #5E6370; 
+  --color-secondary-light: #bfbdbd;
+  --color-text-contact: #9E9E9E;
+
+  /* Cores Fundo */
+  --color-bg: #0C1326; 
+  --color-bg-light:rgb(19, 36, 83);
+  --color-bg-team: #070F1F;
+  --color-bg-contact: #212122;
+
+  /* Cores Botões */
+  --color-bg-button: #162246; 
+  --color-bg-favorite: #EDE3DB;
+  --color-bg-hover: #0c1927;
+
+  /* Cores Acções */
+  --color-sucess: #165325;
+  --color-error: #871621;
 }
 
 body {
-  color: var(--primary-text);
-  background: var(--background);
+  color: var(--color-primary);
+  background: var(--color-bg);
   font-family: 'Inter', Arial, Helvetica, sans-serif; 
-  
 }
 
 button {
-  background-color: var(--button-background);
-  color: var(--button-text);
+  background-color: var( --color-bg-button);
+  color: var(--color-primary);
   border: none;
   padding: 8px 20px;
   border-radius: 8px;
@@ -32,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: #1a2a3d;  
+  background-color: var(--color-bg-hover);    
 }
 
 a {
@@ -42,13 +51,14 @@ a {
 }
 
 a:hover {
-  color: #3b82f6;  
+  color: inherit; 
+  text-decoration: none; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-text); 
+  color: var(--color-primary); 
 }
 
 span, li {
-  color: var(--secondary-text); 
+  color: var(--color-secondary); 
 }
