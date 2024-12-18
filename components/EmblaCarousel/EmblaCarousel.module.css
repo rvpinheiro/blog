@@ -17,7 +17,7 @@
 }
 
 .embla__slide {
-  width: 100%;
+  width: 50%;
   height: 35rem;
   flex-shrink: 0;
   display: flex;
