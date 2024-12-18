@@ -112,3 +112,44 @@
 .error {
   color: var(--color-error);
 }
+
+/* Mobile (telas pequenas) */
+@media (max-width: 767px) {
+  .description {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .form {
+    margin-top: 2rem;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .field {
+    max-width: 100%;
+  }
+
+  .input,
+  .dropdown,
+  .textarea {
+    padding: 0.8rem;
+    font-size: 14px;
+  }
+
+  .button {
+    align-self: center;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .feedbackMessage {
+    width: 90%;
+    font-size: 14px;
+  }
+}

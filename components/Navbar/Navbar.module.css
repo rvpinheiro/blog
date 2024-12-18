@@ -5,6 +5,23 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto; 
+  transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Transições mais suaves */
+}
+
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg);
+  padding: 1rem 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar:not(.scrolled) {
+  animation: none;
 }
 
 .navbar .blog-text {
@@ -38,4 +55,19 @@
   text-decoration: none;
   font-size: 16px; 
   text-transform: uppercase;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.navbar.scrolled {
+  animation: slideIn 0.5s ease-in-out forwards;
 }

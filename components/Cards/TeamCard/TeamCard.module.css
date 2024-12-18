@@ -69,3 +69,29 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .cardImage {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja um bloco e ocupe o espaço disponível */
+  }
+
+  .cardContent {
+    width: 85%;
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+

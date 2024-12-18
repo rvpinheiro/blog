@@ -106,3 +106,102 @@
   color: var(--color-secondary-light);
   font-size: 14px;
 }
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: column; 
+  }
+
+  .cardImage {
+    width: 100%;
+    height: 200px; 
+  }
+
+  .cardContent {
+    width: 100%; 
+    padding: 1.5rem; 
+  }
+
+  .cardTitle {
+    font-size: 18px; 
+  }
+
+  .cardCategory {
+    font-size: 14px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cardText {
+    font-size: 14px; 
+    -webkit-line-clamp: 5; 
+  }
+
+  .authorImage {
+    display: none;
+  }
+
+  .authorNameAndDate {
+    font-size: 12px; 
+  }
+
+  .authorName {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 90%; 
+  }
+
+  .cardImage {
+    width: 60%; 
+  }
+
+  .cardContent {
+    width: 40%; 
+    padding: 2rem;
+  }
+
+  .cardTitle {
+    font-size: 24px; 
+  }
+
+  .cardCategory {
+    font-size: 18px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cardText {
+    font-size: 16px; 
+    -webkit-line-clamp: 13; 
+  }
+
+  .authorImage {
+    width: 38px;
+    height: 38px;
+  }
+
+  .authorNameAndDate {
+    font-size: 14px;
+  }
+
+  .authorName {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}

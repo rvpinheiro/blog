@@ -19,3 +19,19 @@
     color: var(--color-secondary-light);  
     white-space: nowrap;
 }
+
+/* Mobile (telas pequenas) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .dividerContainer {
+        margin-bottom: 0;
+    }
+  }
+  
+  /* Tablet (telas médias) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .dividerContainer {
+        margin-bottom: 0;
+    }
+  }
+  
+  
