@@ -29,24 +29,6 @@ export default function Home() {
           category="Saúde"
           content="A integração de IA no setor médico está revolucionando diagnósticos e tratamentos. Tecnologias como aprendizado de máquina já estão sendo usadas para identificar padrões em imagens médicas e prever surtos de doenças com maior precisão."
         />
-        <LatestCard
-          image="https://picsum.photos/1920/1080?3"
-          title="Agricultura Vertical: Alimento para o Século XXI"
-          author="Larissa Mendes"
-          authorImage="https://picsum.photos/70?3"
-          date="6 Dezembro 2024"
-          category="Sustentabilidade"
-          content="Cultivar alimentos em ambientes urbanos usando tecnologia de ponta é uma das principais apostas da agricultura vertical. Conheça como sistemas hidropônicos e iluminação LED estão ajudando a produzir alimentos frescos em centros urbanos, reduzindo o impacto ambiental."
-        />
-        <LatestCard
-          image="https://picsum.photos/1920/1080?4"
-          title="Metaverso e Educação: Um Novo Horizonte"
-          author="Renato Oliveira"
-          authorImage="https://picsum.photos/70?4"
-          date="3 Dezembro 2024"
-          category="Educação"
-          content="O metaverso está transformando a maneira como aprendemos, criando experiências imersivas para estudantes. Explore como universidades e escolas estão adotando esta tecnologia para aulas práticas, desde laboratórios virtuais até viagens educacionais no mundo digital."
-        />
       </div>
     </div>
   );

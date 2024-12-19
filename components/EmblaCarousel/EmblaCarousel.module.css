@@ -14,10 +14,11 @@
 
 .embla__container {
   display: flex;
+  gap: 2rem;
 }
 
 .embla__slide {
-  width: 50%;
+  width: calc(50% - 0.5rem);
   height: 35rem;
   flex-shrink: 0;
   display: flex;

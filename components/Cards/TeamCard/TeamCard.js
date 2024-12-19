@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './TeamCard.module.css';
 
-const TeamCard = ({ image, name, role, description }) => {
+const TeamCard = ({ image, name, role, bio }) => {
     return (
         <div className={styles.card}>
             <div
@@ -13,12 +13,11 @@ const TeamCard = ({ image, name, role, description }) => {
                 <div className={styles.cardRoleContainer}>
                     <p className={styles.cardRole}>{role}</p>
                 </div>
-                <p className={styles.cardDescription}>{description}</p>
+                <p className={styles.cardDescription}>{bio}</p>
                 <div className={styles.socialIcons}>
                     <i className="fab fa-facebook"></i>
                     <i className="fab fa-instagram"></i>
                     <i className="fab fa-linkedin"></i>
-
                 </div>
             </div>
         </div>

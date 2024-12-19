@@ -66,12 +66,11 @@
   color: var(--color-secondary-light);
   margin: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 13; 
+  -webkit-line-clamp: 12; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5rem;
-  
 }
 
 .authorDateContainer {

@@ -14,7 +14,7 @@ const LatestCard = ({ image, title, author, authorImage, date, category, content
                 </div>
                 <div className={styles.cardContent}>
                     <div className={styles.cardTextContainer}>
-                        <p className={styles.cardText}>{content}</p>
+                        <div className={styles.cardText}>{content}</div>
                     </div>
                     <div className={styles.authorDateContainer}>
                         <div
