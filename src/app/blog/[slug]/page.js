@@ -26,7 +26,7 @@ const PostDetail = ({ params }) => {
                     </p>
                 </div>
                 <div className={styles.authorContainer}>
-                    <div className={styles.authorImage} style={{ backgroundImage: `url(https://picsum.photos/70?random=2)` }}></div>
+                    <div className={styles.authorImage} style={{ backgroundImage: `url(https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg)` }}></div>
                     <div className={styles.authorName}>Lucas Oliveira</div>
                 </div>
             </div>

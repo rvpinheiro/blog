@@ -9,6 +9,7 @@
 
 .embla__viewport {
   width: 100%;
+  overflow: hidden;
 }
 
 .embla__container {
@@ -16,8 +17,9 @@
 }
 
 .embla__slide {
-  width: 100%;
+  width: 90%;
   height: 35rem;
+  margin: 0 5%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;

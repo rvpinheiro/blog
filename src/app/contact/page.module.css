@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   color: var(--color-secondary-light);
+  margin-bottom: 3rem;
 }
 
 .description {
@@ -113,7 +114,6 @@
   color: var(--color-error);
 }
 
-/* Mobile (telas pequenas) */
 @media (max-width: 767px) {
   .description {
     font-size: 14px;
@@ -121,7 +121,7 @@
   }
 
   .form {
-    margin-top: 2rem;
+    margin: 3rem;
     gap: 20px;
     width: 90%;
   }

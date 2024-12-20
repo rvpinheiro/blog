@@ -76,19 +76,22 @@
 
 .blockquote {
     position: relative;
-    border-left: 1px solid var(--button-text); 
-    padding: 15px;
+    border-left: 5px solid var(--color-bg-favorite); 
+    padding: 20px 40px; 
     font-style: italic;
-    font-size: 16px;
-    color: var(--button-text); 
+    color: var(--button-text);
     margin: 2rem 0;
+    border-radius: 8px;
 }
 
 .blockquote::before {
-    font-size: 3rem;
+    content: "“"; 
+    font-size: 4rem;
     position: absolute;
     top: -10px;
-    left: -10px;
+    left: -5px;
+    color: var(--color-bg-favorite); 
+    
 }
 
 .authorContainer {

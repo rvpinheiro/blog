@@ -8,7 +8,7 @@ const Page = () => {
     return (
         <div className={styles.cardsWrapper}>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Explorando o Mundo em Imagens</h1>
+                <h1 className={styles.title}>Lorem ipsum odor amet, consectetuer adipiscing elit.</h1>
                 <p className={styles.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                 </p>
@@ -16,43 +16,44 @@ const Page = () => {
 
             <div className={styles.cardContainer}>
                 <ImageCard
-                    image="https://picsum.photos/300/500?random=1"
+                    image="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
                     altText="Imagem 1"
                 />
                 <ImageCard
-                    image="https://picsum.photos/300/500?random=2"
+                    image="https://images.pexels.com/photos/29480470/pexels-photo-29480470.jpeg"
                     altText="Imagem 2"
                 />
                 <ImageCard
-                    image="https://picsum.photos/300/500?random=3"
+                    image="https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg"
                     altText="Imagem 3"
                 />
                 <ImageCard
-                    image="https://picsum.photos/300/500?random=4"
+                    image="https://images.pexels.com/photos/1015562/pexels-photo-1015562.jpeg"
                     altText="Imagem 4"
                 />
                 <ImageCard
-                    image="https://picsum.photos/300/500?random=5"
+                    image="https://images.pexels.com/photos/224647/pexels-photo-224647.jpeg"
                     altText="Imagem 5"
                 />
+
             </div>
             <div>
                 <Divider text="A equipa" />
                 <div className={styles.teamCardContainer}>
                     <TeamCard
-                        image="https://picsum.photos/120?random=1"
+                        image="https://images.pexels.com/photos/2173382/pexels-photo-2173382.jpeg"
                         name="Alice Souza"
                         role="Designer Gráfico"
                         bio="Alice é uma designer gráfica apaixonada por criar experiências."
                     />
                     <TeamCard
-                        image="https://picsum.photos/120?random=2"
+                        image="https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg"
                         name="Felipe Oliveira"
                         role="Desenvolvedor Frontend"
                         bio="Felipe é um desenvolvedor frontend que adora trabalhar com JavaScript."
                     />
                     <TeamCard
-                        image="https://picsum.photos/120?random=3"
+                        image="https://images.pexels.com/photos/995978/pexels-photo-995978.jpeg"
                         name="Laura Pereira"
                         role="Gerente de Projetos"
                         bio="Laura é uma gerente de projetos focada em organização e entrega de resultados."
