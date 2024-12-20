@@ -14,7 +14,7 @@
 }
 
 .text {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xxl);
     font-weight: 400;
     color: var(--color-secondary-light);  
     white-space: nowrap;
