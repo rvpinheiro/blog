@@ -19,18 +19,18 @@
     color: var(--button-text);
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: var(--font-size-sm);
   }
 
 .title {
-    font-size: 40px; 
+    font-size: var(--font-size-xxl); 
     font-weight: 400; 
     color: var(--button-text); 
     text-align: center;
 }
 
 .subtitle {
-    font-size: 16px; 
+    font-size: var(--font-size-base);
     font-weight: 400;
     color: var(--terciary-text);
     max-width: 500px; 
@@ -39,7 +39,7 @@
 }
 
 .date {
-    font-size: .8rem;
+    font-size: var(--font-size-xs);
     color: var(--button-text); 
     margin: 1rem 0;
     text-align: center;
@@ -66,7 +66,7 @@
 
 .postText {
     width: 80%;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--quat-text);
     padding-right: 20px;
@@ -78,6 +78,7 @@
     position: relative;
     border-left: 5px solid var(--color-bg-favorite); 
     padding: 20px 40px; 
+    font-size: var(--font-size-md);
     font-style: italic;
     color: var(--button-text);
     margin: 2rem 0;
@@ -86,7 +87,7 @@
 
 .blockquote::before {
     content: "“"; 
-    font-size: 4rem;
+    font-size: var(--font-size-xxl);
     position: absolute;
     top: -10px;
     left: -5px;
@@ -114,12 +115,11 @@
 
 .authorName {
     margin-top: 1rem;
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     font-weight: 400;
     color: var(--quat-text);
 }
 
-/* Mobile (telas pequenas) */
 @media (min-width: 320px) and (max-width: 767px) {
     .titleContainer {
         width: 100%;
@@ -130,22 +130,22 @@
     }
 
     .title {
-        font-size: 28px; 
+        font-size: var(--font-size-lg);
     }
     
     .subtitle {
-        font-size: 14px; 
+        font-size: var(--font-size-sm); 
     }
 
     .postText {
         width: 90%;
-        font-size: 14px;
+        font-size: var(--font-size-sm); 
         margin: 0;
         padding: 0;
     }
 
     .blockquote {
-        font-size: 14px;
+        font-size: var(--font-size-sm); 
         margin: 0;
     }
 
@@ -154,7 +154,6 @@
     }
 }
 
-/* Tablet (telas médias) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .titleContainer {
         width: 90%;
@@ -165,7 +164,7 @@
     }
 
     .title {
-        font-size: 34px; 
+        font-size: var(--font-size-xl); 
     }
 
     .postText {

@@ -4,11 +4,10 @@
   align-items: center;
   text-align: center;
   color: var(--color-secondary-light);
-  margin-bottom: 3rem;
 }
 
 .description {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -41,7 +40,7 @@
 }
 
 .label {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   text-align: left;
 }
 
@@ -49,7 +48,7 @@
 .dropdown,
 .textarea {
   width: 100%;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   border: none;
   border-radius: 15px;
   background-color: var(--color-bg-contact);
@@ -85,7 +84,7 @@
 .button {
   align-self: flex-start;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   background-color: var(--color-bg-light);
   color: white;
   border: none;
@@ -99,7 +98,7 @@
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-sm);
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
@@ -116,7 +115,7 @@
 
 @media (max-width: 767px) {
   .description {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     max-width: 90%;
   }
 
@@ -139,17 +138,17 @@
   .dropdown,
   .textarea {
     padding: 0.8rem;
-    font-size: 14px;
+    font-size: var(--font-size-xs);
   }
 
   .button {
     align-self: center;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: var(--font-size-xs);
   }
 
   .feedbackMessage {
     width: 90%;
-    font-size: 14px;
+    font-size: var(--font-size-base);
   }
 }

@@ -31,7 +31,7 @@
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   color: var(--color-primary);
   margin: 0;
@@ -59,7 +59,7 @@
   color: var(--color-primary);                    
   padding: 5px 10px;                           
   border-radius: 5px;                          
-  font-size: 16px;                             
+  font-size: var(--font-size-sm);                           
   width: fit-content;   
   position: absolute;
   left: 20px;
@@ -67,7 +67,7 @@
 }
 
 .cardText {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   color: var(--color-secondary-light);
   margin: 0;
   display: -webkit-box;
@@ -102,21 +102,21 @@
 }
 
 .authorName {
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   color: var(--color-secondary-light);
 }
 
 .date {
   color: var(--color-secondary-light);
-  font-size: 14px;
+  font-size: var(--font-size-xs);
 }
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 767px) {
   .card {
-    flex-direction: column; /* Alinha verticalmente em telas pequenas */
-    max-width: 90%; /* Usa quase toda a largura */
-    height: auto; /* Ajusta altura automaticamente */
+    flex-direction: column; 
+    max-width: 90%; 
+    height: auto; 
   }
 
   .cardImage {

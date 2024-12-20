@@ -30,11 +30,11 @@
   color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
 }
 
 .title {
-  font-size: 26px;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   margin: 0;
   color: var(--color-primary);
@@ -71,13 +71,13 @@
 }
 
 .authorName {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   color: var(--color-primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .date {
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   color: var(--color-primary);
   text-align: right;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

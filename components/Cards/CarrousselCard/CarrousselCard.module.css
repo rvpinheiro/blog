@@ -23,7 +23,7 @@
 }
 
 .cardTitle {
-    font-size: 32px;
+    font-size: var(--font-size-xxl);
     margin: 0;
     color: var(--color-primary); 
 }
@@ -45,7 +45,7 @@
 }
 
 .cardAuthorDate .author, .cardAuthorDate .date {
-    font-size: 16px;
+    font-size: var(--font-size-sm);
     color: var(--color-primary); 
 }
 
@@ -57,7 +57,7 @@
     color: var(--color-primary); 
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: var(--font-size-sm);
 }
 
 .cardTitle, .cardAuthorDate .author, .cardAuthorDate .date {
@@ -79,19 +79,18 @@
 }
 
 .favoriteStar i {
-    font-size: 14px; 
+    font-size: var(--font-size-xs); 
     color: var(--color-primary); 
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     .cardTitle {
-        font-size: 24px;
+        font-size: var(--font-size-xl);
     }
     .cardAuthorDate .author, .cardAuthorDate .date {
-        font-size: 14px;
+        font-size: var(--font-size-xs);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  
 }

@@ -19,7 +19,7 @@
 }
 
 .blog-text {
-  font-size: 24px;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   text-transform: uppercase;
   transform: rotate(-90deg);
@@ -49,13 +49,13 @@
 .link {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   text-transform: uppercase;
 }
 
 .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: var(--font-size-3xl);
   cursor: pointer;
   position: absolute;
   top: 2rem;
@@ -105,6 +105,6 @@
   }
 
   .link {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl); 
   }
 }
