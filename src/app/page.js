@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import LatestCard from "../../components/Cards/LastestCard/LastestCard";
 import Divider from "../../components/Divider/Divider";
 import EmblaCarousel from "../../components/EmblaCarousel/EmblaCarousel";
-
+import '@fortawesome/fontawesome-free/css/all.min.css'
 export default function Home() {
   return (
     <div className={styles.page}>
