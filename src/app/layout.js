@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../../components/Navbar/Navbar";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata = {
   title: "Blog",
