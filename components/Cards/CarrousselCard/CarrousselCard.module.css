@@ -82,3 +82,16 @@
     font-size: 14px; 
     color: var(--color-primary); 
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cardTitle {
+        font-size: 24px;
+    }
+    .cardAuthorDate .author, .cardAuthorDate .date {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}

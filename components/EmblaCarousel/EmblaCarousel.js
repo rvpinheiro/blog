@@ -65,6 +65,7 @@ const EmblaCarousel = () => {
             loop: true,
             align: "center",
             speed: 5,
+            skipSnaps: false
         },
         [Autoplay()]
     );

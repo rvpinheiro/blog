@@ -28,6 +28,7 @@ body {
   color: var(--color-primary);
   background: var(--color-bg);
   font-family: 'Inter', Arial, Helvetica, sans-serif; 
+  margin: 0;
 }
 
 button {

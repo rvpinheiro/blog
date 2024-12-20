@@ -43,19 +43,19 @@ const Page = () => {
                         image="https://picsum.photos/120?random=1"
                         name="Alice Souza"
                         role="Designer Gráfico"
-                        description="Alice é uma designer gráfica apaixonada por criar experiências."
+                        bio="Alice é uma designer gráfica apaixonada por criar experiências."
                     />
                     <TeamCard
                         image="https://picsum.photos/120?random=2"
                         name="Felipe Oliveira"
                         role="Desenvolvedor Frontend"
-                        description="Felipe é um desenvolvedor frontend que adora trabalhar com JavaScript."
+                        bio="Felipe é um desenvolvedor frontend que adora trabalhar com JavaScript."
                     />
                     <TeamCard
                         image="https://picsum.photos/120?random=3"
                         name="Laura Pereira"
                         role="Gerente de Projetos"
-                        description="Laura é uma gerente de projetos focada em organização e entrega de resultados."
+                        bio="Laura é uma gerente de projetos focada em organização e entrega de resultados."
                     />
                 </div>
             </div>
