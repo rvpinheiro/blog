@@ -1,11 +1,19 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import Divider from '../../../components/Divider/Divider';
 import emailjs from 'emailjs-com';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Page = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
+
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -67,7 +75,7 @@ const Page = () => {
     };
 
     return (
-        <div className={styles.contactPage}>
+        <div className={styles.contactPage} data-aos="zoom-in-up">
             <Divider text="Fala connosco!" />
             <p className={styles.description}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.

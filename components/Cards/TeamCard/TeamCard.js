@@ -1,9 +1,17 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect } from 'react';
 import styles from './TeamCard.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TeamCard = ({ image, name, role, bio }) => {
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
     return (
-        <div className={styles.card}>
+        <div className={styles.card}
+            data-aos="zoom-in-up">
             <div
                 className={styles.cardImage}
                 style={{ backgroundImage: `url(${image})` }}

@@ -1,18 +1,30 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect } from 'react';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from './LatestCard.module.css';
 
 const LatestCard = ({ image, title, author, authorImage, date, category, content, slug }) => {
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
+
     return (
-        <div className={styles.card}>
+        <div
+            className={styles.card}
+            data-aos="zoom-in-up"
+        >
             <Link href={`/blog/${slug}`}>
                 <div
                     className={styles.cardImage}
-                    style={{ backgroundImage: `url(${image})` }}>
+                    style={{ backgroundImage: `url(${image})` }}
+                >
                     <h3 className={styles.cardTitle}>{title}</h3>
                     <div className={styles.cardCategory}>{category}</div>
                 </div>
-                <div className={styles.cardContent}>
+                <div className={styles.cardContent} >
                     <div className={styles.cardTextContainer}>
                         <div className={styles.cardText}>{content}</div>
                     </div>
@@ -28,7 +40,7 @@ const LatestCard = ({ image, title, author, authorImage, date, category, content
                     </div>
                 </div>
             </Link>
-        </div >
+        </div>
     );
 };
 
