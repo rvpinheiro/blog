@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './LastestCard.module.css';
+import styles from './LatestCard.module.css';
 
 const LatestCard = ({ image, title, author, authorImage, date, category, content, slug }) => {
     return (

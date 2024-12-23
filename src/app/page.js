@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import LatestCard from "../../components/Cards/LastestCard/LastestCard";
+import LatestCard from "../../components/Cards/LatestCard/LatestCard";
 import Divider from "../../components/Divider/Divider";
 import EmblaCarousel from "../../components/EmblaCarousel/EmblaCarousel";
 
