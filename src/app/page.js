@@ -2,8 +2,43 @@ import styles from "./page.module.css";
 import LatestCard from "../../components/Cards/LatestCard/LatestCard";
 import Divider from "../../components/Divider/Divider";
 import EmblaCarousel from "../../components/EmblaCarousel/EmblaCarousel";
+import { fetchPosts } from "../../lib/api";
 
-export default function Home() {
+export default async function Home() {
+  let posts = [];
+
+  try {
+    posts = await fetchPosts();
+  } catch (error) {
+    console.error("Failed to fetch posts", error);
+  }
+
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  const sortedPosts = posts
+    .slice() // Cria uma cópia para não alterar o array original
+    .sort((a, b) => new Date(b.Date) - new Date(a.Date)) // Ordena os posts pela data
+    .slice(0, 6); // Limita os posts a 6
+
+  const formattedPosts = sortedPosts.map(({ id, Title, Image, author, Date, category, Content }) => {
+    const authorImageUrl = author.Image ? `${apiUrl}${author.Image.formats.thumbnail.url}` : '';
+    const postImageUrl = `${apiUrl}${Image.formats.large.url}`;
+    const content = Content.map(contentBlock =>
+      contentBlock.children.map(child => child.text).join(' ')
+    ).join('\n');
+
+    return {
+      id,
+      title: Title,
+      image: postImageUrl,
+      authorName: author.Name,
+      authorImage: authorImageUrl,
+      date: Date,
+      category: category.Title,
+      content,
+    };
+  });
+
   return (
     <div className={styles.page}>
       <div className={styles.pageCarrousel}>
@@ -11,24 +46,22 @@ export default function Home() {
       </div>
       <div className={styles.latestCardContainer}>
         <Divider text="Últimos posts" />
-        <LatestCard
-          image="https://picsum.photos/1920/1080?1"
-          title="Revolução na Mobilidade Elétrica"
-          author="Ana Beatriz"
-          authorImage="https://picsum.photos/70?1"
-          date="12 Dezembro 2024"
-          category="Inovação"
-          content="Carros elétricos têm ganhado espaço no mercado global, oferecendo soluções sustentáveis e tecnológicas. Este artigo explora como novos avanços em baterias de estado sólido prometem aumentar a autonomia e reduzir o tempo de recarga, transformando o futuro da mobilidade elétrica. Carros elétricos têm ganhado espaço no mercado global, oferecendo soluções sustentáveis e tecnológicas. Este artigo explora como novos avanços em baterias de estado sólido prometem aumentar a autonomia e reduzir o tempo de recarga, transformando o futuro da mobilidade elétrica. Carros elétricos têm ganhado espaço no mercado global, oferecendo soluções sustentáveis e tecnológicas. Este artigo explora como novos avanços em baterias de estado sólido prometem aumentar a autonomia e reduzir o tempo de recarga, transformando o futuro da mobilidade elétrica. FIM FIM FIM"
-        />
-        <LatestCard
-          image="https://picsum.photos/1920/1080?2"
-          title="Inteligência Artificial e a Saúde do Futuro"
-          author="Pedro Santos"
-          authorImage="https://picsum.photos/70?2"
-          date="8 Dezembro 2024"
-          category="Saúde"
-          content="A integração de IA no setor médico está revolucionando diagnósticos e tratamentos. Tecnologias como aprendizado de máquina já estão sendo usadas para identificar padrões em imagens médicas e prever surtos de doenças com maior precisão."
-        />
+        {
+          formattedPosts.length === 0
+            ? <p>Não há posts disponíveis no momento.</p>
+            : formattedPosts.map((post) => (
+              <LatestCard
+                key={post.id}
+                image={post.image}
+                title={post.title}
+                author={post.authorName}
+                authorImage={post.authorImage}
+                date={post.date}
+                category={post.category}
+                content={post.content}
+              />
+            ))
+        }
       </div>
     </div>
   );
