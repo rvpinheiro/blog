@@ -1,57 +1,50 @@
-import React from 'react'
 import styles from './page.module.css'
 import CategoriesCard from '../../../components/Cards/CategoriesCard/CategoriesCard'
 import Divider from '../../../components/Divider/Divider'
+import { fetchCategories } from '../../../lib/api'
 
-const Page = () => {
+export default async function Page() {
+    let categories = []
+
+    try {
+        const response = await fetchCategories()
+        categories = response || []
+    } catch (error) {
+        console.error("Erro ao carregar as categorias:", error)
+    }
+
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    const sortedCategories = categories
+        .slice()
+        .sort((a, b) => a.Title.localeCompare(b.Title))
+
+    const formattedCategories = sortedCategories.map(({ id, Title, Image }) => {
+        const categoryImageUrl = `${apiUrl}${Image.formats.thumbnail.url}`;
+
+        return {
+            id,
+            title: Title,
+            image: categoryImageUrl
+        }
+    });
+
     return (
         <div className={styles.page}>
             <Divider text="Todas as categorias" />
-
             <div className={styles.categoriesContainer}>
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=1"
-                    category="Inovação"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=2"
-                    category="Tecnologia"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=3"
-                    category="Saúde"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=4"
-                    category="Educação"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=5"
-                    category="Ciência"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=6"
-                    category="Astronomia"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=7"
-                    category="Futuro"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=8"
-                    category="Sustentabilidade"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=9"
-                    category="Economia"
-                />
-                <CategoriesCard
-                    image="https://picsum.photos/1920/1080?random=10"
-                    category="Arte"
-                />
+                {
+                    formattedCategories.length === 0
+                        ? <p>Não há categorias disponíveis no momento.</p>
+                        : formattedCategories.map((category) => (
+                            <CategoriesCard
+                                key={category.id}
+                                image={category.image}
+                                category={category.title}
+                            />
+                        ))
+                }
             </div>
         </div>
     )
 }
-
-export default Page

@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem;
+  justify-content: center; /* Garantir que os itens ficam centralizados */
 }
 
 .categoryCard {
