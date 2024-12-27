@@ -50,7 +50,7 @@ export default async function Page() {
                             authorImage={post.authorImage}
                             date={post.date}
                             category={post.category}
-                            slug={post.slug}
+                            slug={post.id}
                         />
                     ))
                 )}

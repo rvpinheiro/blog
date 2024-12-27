@@ -20,32 +20,33 @@ export default async function Page() {
         .sort((a, b) => a.Title.localeCompare(b.Title))
 
     const formattedCategories = sortedCategories.map(({ id, Title, Image }) => {
+        const slug = id.toString();
         const categoryImageUrl = `${apiUrl}${Image.formats.thumbnail.url}`;
 
         return {
             id,
             title: Title,
-            image: categoryImageUrl
+            image: categoryImageUrl,
+            slug,
         }
     });
 
     return (
         <div className={styles.page}>
             <Divider text="Todas as categorias" />
-            <div className={styles.cardsContainer}>
-                <div className={styles.categoriesContainer}>
-                    {
-                        formattedCategories.length === 0
-                            ? <p>Não há categorias disponíveis no momento.</p>
-                            : formattedCategories.map((category) => (
-                                <CategoriesCard
-                                    key={category.id}
-                                    image={category.image}
-                                    category={category.title}
-                                />
-                            ))
-                    }
-                </div>
+            <div className={styles.categoriesContainer}>
+                {
+                    formattedCategories.length === 0
+                        ? <p>Não há categorias disponíveis no momento.</p>
+                        : formattedCategories.map((category) => (
+                            <CategoriesCard
+                                key={category.id}
+                                image={category.image}
+                                category={category.title}
+                                slug={category.slug}
+                            />
+                        ))
+                }
             </div>
         </div>
     )

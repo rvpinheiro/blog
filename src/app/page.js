@@ -21,6 +21,8 @@ export default async function Home() {
     .slice(0, 6); // Limita os posts a 6
 
   const formattedPosts = sortedPosts.map(({ id, Title, Image, author, Date, category, Content }) => {
+
+    const slug = id.toString();
     const authorImageUrl = author.Image ? `${apiUrl}${author.Image.formats.thumbnail.url}` : '';
     const postImageUrl = `${apiUrl}${Image.formats.large.url}`;
     const content = Content.map(contentBlock =>
@@ -29,6 +31,7 @@ export default async function Home() {
 
     return {
       id,
+      slug,
       title: Title,
       image: postImageUrl,
       authorName: author.Name,
@@ -59,6 +62,7 @@ export default async function Home() {
                 date={post.date}
                 category={post.category}
                 content={post.content}
+                slug={post.slug}
               />
             ))
         }
