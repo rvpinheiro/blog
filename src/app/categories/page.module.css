@@ -2,14 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .categoriesContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 1rem;
-  justify-content: center; /* Garantir que os itens ficam centralizados */
+  justify-content: flex-start; 
+  max-width: 1200px; 
 }
 
 .categoryCard {

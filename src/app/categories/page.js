@@ -32,18 +32,20 @@ export default async function Page() {
     return (
         <div className={styles.page}>
             <Divider text="Todas as categorias" />
-            <div className={styles.categoriesContainer}>
-                {
-                    formattedCategories.length === 0
-                        ? <p>Não há categorias disponíveis no momento.</p>
-                        : formattedCategories.map((category) => (
-                            <CategoriesCard
-                                key={category.id}
-                                image={category.image}
-                                category={category.title}
-                            />
-                        ))
-                }
+            <div className={styles.cardsContainer}>
+                <div className={styles.categoriesContainer}>
+                    {
+                        formattedCategories.length === 0
+                            ? <p>Não há categorias disponíveis no momento.</p>
+                            : formattedCategories.map((category) => (
+                                <CategoriesCard
+                                    key={category.id}
+                                    image={category.image}
+                                    category={category.title}
+                                />
+                            ))
+                    }
+                </div>
             </div>
         </div>
     )

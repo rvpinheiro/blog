@@ -6,10 +6,11 @@
   overflow: hidden;
   background-color: var(--color-bg-team);
   border: 1px solid white;
+  align-items: center; 
 }
 
 .cardImage {
-  width: 200px;
+  width: 250px;
   height: 200px;
   border-radius: 50%; 
   background-size: cover;
@@ -17,8 +18,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   backdrop-filter: blur(10px); 
   border: 2px solid rgba(255, 255, 255, 0.2); 
-  margin-top: 35px; 
-  margin-left: 35px; 
+  margin: 35px;
 }
 
 .cardContent {
