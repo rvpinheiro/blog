@@ -14,7 +14,7 @@ const formatPosts = (posts, apiUrl) => {
     return posts
         .filter(post => post.Favorite === true) // Filtra os posts favoritos
         .sort((a, b) => new Date(b.Date) - new Date(a.Date)) // Ordena os posts pela data (mais recente primeiro)
-        .map(({ id, Title, Image, author, Date, category }) => {
+        .map(({ id, Title, Image, author, Date, category, slug }) => {
             const authorImageUrl = author.Image ? `${apiUrl}${author.Image.formats.thumbnail.url}` : '';
             const postImageUrl = Image ? `${apiUrl}${Image.formats.large.url}` : '';
             return {
@@ -25,6 +25,7 @@ const formatPosts = (posts, apiUrl) => {
                 authorImage: authorImageUrl,
                 date: Date,
                 category: category.Title,
+                slug
             };
         });
 };
@@ -73,6 +74,7 @@ const EmblaCarousel = () => {
                                 authorImage={post.authorImage}
                                 date={post.date}
                                 category={post.category}
+                                slug={post.id}
                             />
                         </div>
                     ))}

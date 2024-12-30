@@ -2,6 +2,7 @@ import styles from './page.module.css'
 import CategoriesCard from '../../../components/Cards/CategoriesCard/CategoriesCard'
 import Divider from '../../../components/Divider/Divider'
 import { fetchCategories } from '../../../lib/api'
+import NoPosts from '../../../components/NoPosts/NoPosts'
 
 export default async function Page() {
     let categories = []
@@ -37,7 +38,7 @@ export default async function Page() {
             <div className={styles.categoriesContainer}>
                 {
                     formattedCategories.length === 0
-                        ? <p>Não há categorias disponíveis no momento.</p>
+                        ? <NoPosts />
                         : formattedCategories.map((category) => (
                             <CategoriesCard
                                 key={category.id}

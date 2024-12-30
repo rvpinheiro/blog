@@ -3,6 +3,7 @@ import LatestCard from "../../components/Cards/LatestCard/LatestCard";
 import Divider from "../../components/Divider/Divider";
 import EmblaCarousel from "../../components/EmblaCarousel/EmblaCarousel";
 import { fetchPosts } from "../../lib/api";
+import NoPosts from "../../components/NoPosts/NoPosts";
 
 export default async function Home() {
   let posts = [];
@@ -51,7 +52,7 @@ export default async function Home() {
         <Divider text="Últimos posts" />
         {
           formattedPosts.length === 0
-            ? <p>Não há posts disponíveis no momento.</p>
+            ? <NoPosts />
             : formattedPosts.map((post) => (
               <LatestCard
                 key={post.id}

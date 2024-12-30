@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './page.module.css';
 import { fetchPosts } from "../../../../lib/api";
+import NoPosts from "../../../../components/NoPosts/NoPosts";
 
 export default async function PostDetail({ params }) {
     const { slug } = await params;
@@ -14,7 +15,7 @@ export default async function PostDetail({ params }) {
     }
 
     if (!post) {
-        return <p>Post não encontrado.</p>;
+        return <NoPosts />;
     }
 
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;

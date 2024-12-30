@@ -1,0 +1,58 @@
+.noPosts {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--color-primary);
+}
+
+.noPosts h2 {
+  font-size: var(--font-size-xxl);
+  margin: 20px 0;
+  color: var(--color-secondary);
+}
+
+.noPosts p {
+  font-size: var(--font-size-md);
+  color: var(--color-secondary-light);
+  margin-bottom: 30px;
+}
+
+.noPosts img {
+  max-width: 100%;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button, .buttonOutline {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: var(--font-size-md);
+}
+
+.button {
+  background-color: var(--color-bg-button);
+  color: var(--color-primary);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.buttonOutline {
+  background-color: transparent;
+  border: 2px solid var(--color-bg-button);
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.buttonOutline:hover {
+  background-color: var(--color-bg-button);
+  color: var(--color-primary);
+}

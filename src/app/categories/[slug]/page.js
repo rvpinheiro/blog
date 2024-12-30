@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import BlogCard from "../../../../components/Cards/BlogCard/BlogCard";
 import Divider from "../../../../components/Divider/Divider";
 import { fetchPosts } from "../../../../lib/api";
+import NoPosts from "../../../../components/NoPosts/NoPosts";
 
 export default async function Page({ params }) {
     let posts = [];
@@ -45,7 +46,7 @@ export default async function Page({ params }) {
             <Divider text={`Posts na categoria ${filteredPosts.length > 0 ? filteredPosts[0].category.Title : ''}`} />
             <div className={styles.cardContainer}>
                 {formattedPosts.length === 0 ? (
-                    <p>Não há posts disponíveis nesta categoria.</p>
+                    <NoPosts />
                 ) : (
                     formattedPosts.map((post) => (
                         <BlogCard

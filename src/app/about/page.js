@@ -13,8 +13,8 @@ export default async function Page() {
         const response = await fetchAboutPageContent();
         aboutContent = response[0];
 
-        const teamResponse = await fetchTeam(); // Buscar dados da equipa
-        teamMembers = teamResponse; // Armazenar os dados dos membros da equipa
+        const teamResponse = await fetchTeam();
+        teamMembers = teamResponse;
         console.log('Membros da equipa:', teamMembers);
 
     } catch (error) {
